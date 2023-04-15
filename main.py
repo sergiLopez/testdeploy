@@ -12,7 +12,7 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World"}
+    return "NURIA ALMANA"
 
 @app.get("/teams/")
 async def read_teams(skip: int = 0, limit: int = 10):
