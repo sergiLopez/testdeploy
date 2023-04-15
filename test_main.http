@@ -1,0 +1,53 @@
+# Test your FastAPI endpoints
+
+POST http://127.0.0.1:8000/teams
+Content-Type: application/json
+
+{   "name": "barcelona",
+    "country": "Spain",
+    "description": "Futbol Sala Team"}
+
+###
+
+GET http://127.0.0.1:8000/teams
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/team/barcelona
+Accept: application/json
+
+###
+
+DELETE http://127.0.0.1:8000/teams/barcelona
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/teams
+Accept: application/json
+
+###
+
+PUT http://127.0.0.1:8000/teams
+Content-Type: application/json
+
+{   "name": "barcelona",
+    "country": "Spain",
+    "description": "Futbol Sala Team"}
+
+###
+
+PUT http://127.0.0.1:8000/teams
+Content-Type: application/json
+
+{   "name": "barcelona",
+    "country": "France",
+    "description": "Futbol Sala Team"}
+
+###
+
+
+
+
+
